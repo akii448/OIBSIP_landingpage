@@ -1,0 +1,281 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+    --navbar-height: 59px
+}
+#navbar
+{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;  
+    position: relative;
+    top: 0px;
+}
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    
+    
+}
+#logo
+{
+}
+#logo img
+{
+height: 70px;
+margin: 12px 22px;
+padding-right: 600px
+}
+
+#navbar ul {
+    display: inline-flex;  
+    padding: 0px 20px;
+    font-family: Fredoka system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar ul li {
+   /*color:white ;*/ 
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white ;
+    justify-content: space-between;
+    padding: 3px 22px;
+    border-radius: 19px;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;  
+}
+#navbar ul li a:hover{
+    color:white ;
+    background-color:rgb(255, 81, 0);
+    padding: 5px 25px;
+   
+}
+/*Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before {
+    content:"";
+    position: absolute;
+    background : url('../myweb/contact.png') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:150%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*service section*/
+#services{
+    margin: 0px;
+    display: flex;
+}
+#services .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    position: relative;
+    padding: 70px;
+    margin: 2px 6px;;
+    font-size: 1.2rem;
+    background-color:white;
+    margin-bottom: 20px;
+}
+#services .box:hover{
+    color: white;
+    background-color:rgba(23, 22, 22, 0.84);
+    border-radius: 25px;
+    box-shadow: 20px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    animation:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: all 0.5s ease-in-out 0s;
+}
+#services .box img{
+    height: 150px;
+    margin-right: 90px;
+    margin-left: 90px;
+    animation: cubic-bezier(0.86, 0, 0.07, 1) ;
+    display: block;
+}
+
+#services .box p{
+    font-stretch: narrower;
+    font-size: 22px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+} 
+/*client  side*/
+#client-section{
+    height: 400px;
+    position: relative;
+}
+#client-section::before {
+    
+    content: " ";
+    position: absolute ;
+    background: url('../myweb/bg2.png');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7; 
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+padding: 60px;
+}
+#clients img{
+    
+    height: 100px;
+}
+/*contact section*/
+#contact{
+    position: absolute;
+    background:url('../myweb/contact.png'); 
+    width: 100%;
+    height: 70%
+}
+#contact form::before{
+    content: "";
+   
+}
+#contact ::before{  
+    border-color: rgb(244, 60, 60);
+    color:gray;
+    background:white;
+    height 20px;
+    
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    padding-bottom: -90px;
+    margin-bottom: 130px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.9rem;
+    margin: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 20px;
+    opacity:0.9;
+    font-size: 1.1re ;
+}
+#contact-box form{
+    padding:25px ;
+    border: rgb(231, 5, 5);
+    width: 38%;
+}
+#contact-box label{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:gray;
+    border-color: rgb(231, 5, 5);
+    font-size: 2.5rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/*utiiliti class*/
+.h-primary{
+    font-size: 2.8rem;
+    color: white;
+    padding: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.h-secondary{
+    font-size: 1.8rem;
+    margin-right: 100px;
+    padding: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.h-tershari{
+    font-size: 2.8rem;
+    
+    justify-content:flex-end;
+    padding: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.h-primary1{
+    font-size: 2.8rem;
+    color: black;
+    padding: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.btn{
+    padding: 5px 30px;
+    border: 2px solid white;
+    background-color:rgb(255, 81, 0);
+    color: white;
+    margin: 60px ;
+    font-size: 1rem ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn1{
+    padding: 5px 30px;
+    border: 2px solid white;
+    background-color: rgb(255, 81, 0);
+    color: white;
+    margin-left: 228px ;
+    margin-top: 30px;
+    font-size: 1rem ;  
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn2{
+    padding: 2px 2px;
+    background-color:rgb(255, 81, 0);
+    color: white;
+    font-size: 1rem ;  
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+ 
+
+
